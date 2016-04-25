@@ -1,0 +1,167 @@
+div.row, div.submenu {
+	border: 2px solid #666666;
+}
+
+div.row {
+	width: 295px;
+	height: 332px;	
+	display: inline-block;
+	margin: 20px;
+}
+
+div.row > div, div.title, div.info, div.info > div {
+	height: 50%;	
+}
+
+div.title_left {
+	width: 90%;
+}
+
+div.title_text {
+	height: 100%;
+	line-height: 1.5em;
+	display: table;
+	width: 100%;
+	font-size: 24px;
+
+/*white-space: nowrap;*/
+	/*overflow: hidden;*/
+	/*text-overflow: ellipsis;*/
+}
+
+div.title_right {
+	width: 10%;
+}
+
+/*div.title_right > div {
+	width: 100%;
+	height: 100%;
+}*/
+
+div.title > div {
+	display: inline-block;
+	height: 100%;
+	margin-right: -4px;
+}
+
+div.info1 {
+	display: table;
+	width: 100%;
+}
+
+div.info1 > div {
+	max-width: 50%;
+	margin-right: -4px;
+	height: 100%;
+}
+
+div.image {
+	width: 100%;
+	height: 100%;
+}
+
+div.info2 {
+	display: table;
+	width: 100%;
+}
+
+.available_info2_links, .started_exp_info2, .finished_rate, .finished_rate > div, div.info1 > div, div.rating, div.count_rate {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.available_info2_links > a, div.count_rate, div.finished, div.title_right > div > li {
+	color: #9f9f9f;
+}
+
+.started_exp_info2 {
+	color: #D74200;
+}
+
+div.rating_container > span {
+	cursor: pointer;
+	color: #FFAE00;
+}
+
+div.rating > span {
+	color: #FFAE00;	
+}
+
+
+div.rate_context {
+	color: #5794C4;
+}
+
+.half-left {
+	position:relative;
+}
+
+.half-left:after {
+	content:'';
+	position:absolute;
+	z-index:1;
+	background:white;
+	/*color: #5794C4;*/
+	width: 50%;
+	height: 100%;
+	left: 50%;
+}
+
+.half-right {
+	margin-left: -13px;
+	z-index: 2;
+}
+
+div.price {
+	color: #59A72F;
+	text-align: center;
+}
+
+div.finished {
+
+}
+
+div.progress_container {
+	height: 8px;
+	background-color: #9f9f9f;
+}
+
+div.finished_percent {
+	background-color: #59A72F;
+	height: 100%;
+}
+
+div.title_right > div {
+	display: inline;
+	cursor: pointer;
+}
+div.title_right > div > li{ 
+	margin-left: 17px;
+	font-size: 25px;
+	margin-top: -21px;
+}
+
+div.title, div.info2, div.info1 {
+	padding: 0px 10px 0px 10px;
+}
+
+div.submenu {
+	position: absolute;
+	background-color: white;
+	width: 200px;
+	height: 150px;
+	border: 1px solid #666666;
+}
+
+div.submenu > div {
+	height: 50px;
+	border: 1px solid #666666;
+	display: table;
+	width: 100%;
+}
+
+div.submenu > div > h4 {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
