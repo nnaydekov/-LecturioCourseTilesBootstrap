@@ -15,6 +15,9 @@ div.row > div, div.title, div.info, div.info > div {
 
 div.title_left {
 	width: 90%;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 div.title_text {
@@ -164,4 +167,37 @@ div.submenu > div > h4 {
 	display: table-cell;
 	vertical-align: middle;
 	padding: 10px;
+}
+
+
+.ellipsis {
+	overflow: hidden;
+	height: 82px;
+}
+
+.ellipsis:before {
+	content:"";
+	float: left;
+	width: 5px; 
+	height: 82px; 
+}
+
+.ellipsis > *:first-child {
+	float: right;
+	width: 100%;
+	margin-left: -5px; 
+}		
+
+.ellipsis:after {
+	content: "\02026";  
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	float: right; position: relative;
+	top: -46px; 
+	left: 100%; 
+	width: 3em; 
+	margin-left: -3em;
+	padding-right: 5px;
+	text-align: right;
 }

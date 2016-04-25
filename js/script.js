@@ -68,7 +68,7 @@ $( document ).ready(function() {
 		html +=	'<div>';
 		html +=		'<div class="title">';
 		html +=			'<div class="title_left">';
-		html +=				'<div class="title_text"></div>';
+		html +=				'<div class="title_text ellipsis"></div>';
 		html +=			'</div>';
 		html +=			'<div class="title_right"></div>';
 		html +=		'</div>';
@@ -83,7 +83,7 @@ $( document ).ready(function() {
 	$.each(data, function(index, row){
 		$('.container').append('<div class="row" id="'+ row.id +'">' + html +'</div>');
 		$('#'+ row.id +' .image').css('background-image', 'url("' + row.imageUrl + '")');
-		$('#'+ row.id +' .title_text').text(row.title);
+		$('#'+ row.id +' .title_text').append('<p>'+ row.title +'</p>');
 		switch(row.type){
 			case 'available': 
 				// info2
